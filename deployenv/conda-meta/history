@@ -1,0 +1,44 @@
+==> 2022-06-01 03:17:39 <==
+# cmd: C:\Users\HP\anaconda3_new\Scripts\conda-script.py create --yes --json --prefix C:\Users\HP\anaconda3_new\envs\deployenv python=3.9
+# conda version: 4.13.0
++defaults/noarch::tzdata-2022a-hda174b7_0
++defaults/noarch::wheel-0.37.1-pyhd3eb1b0_0
++defaults/win-64::ca-certificates-2022.4.26-haa95532_0
++defaults/win-64::certifi-2022.5.18.1-py39haa95532_0
++defaults/win-64::openssl-1.1.1o-h2bbff1b_0
++defaults/win-64::pip-21.2.4-py39haa95532_0
++defaults/win-64::python-3.9.12-h6244533_0
++defaults/win-64::setuptools-61.2.0-py39haa95532_0
++defaults/win-64::sqlite-3.38.3-h2bbff1b_0
++defaults/win-64::vc-14.2-h21ff451_1
++defaults/win-64::vs2015_runtime-14.27.29016-h5e58377_2
++defaults/win-64::wincertstore-0.2-py39haa95532_2
+# update specs: ['python=3.9']
+==> 2022-06-03 11:19:29 <==
+# cmd: C:\Users\HP\anaconda3_new\Scripts\conda-script.py install -c conda-forge scikit-learn
+# conda version: 4.13.0
+-defaults/win-64::ca-certificates-2022.4.26-haa95532_0
+-defaults/win-64::certifi-2022.5.18.1-py39haa95532_0
+-defaults/win-64::openssl-1.1.1o-h2bbff1b_0
++conda-forge/noarch::joblib-1.1.0-pyhd8ed1ab_0
++conda-forge/noarch::threadpoolctl-3.1.0-pyh8a188c0_0
++conda-forge/win-64::ca-certificates-2022.5.18.1-h5b45459_0
++conda-forge/win-64::certifi-2022.5.18.1-py39hcbf5309_0
++conda-forge/win-64::intel-openmp-2022.1.0-h57928b3_3787
++conda-forge/win-64::libblas-3.9.0-14_win64_mkl
++conda-forge/win-64::libcblas-3.9.0-14_win64_mkl
++conda-forge/win-64::liblapack-3.9.0-14_win64_mkl
++conda-forge/win-64::m2w64-gcc-libgfortran-5.3.0-6
++conda-forge/win-64::m2w64-gcc-libs-5.3.0-7
++conda-forge/win-64::m2w64-gcc-libs-core-5.3.0-7
++conda-forge/win-64::m2w64-gmp-6.1.0-2
++conda-forge/win-64::m2w64-libwinpthread-git-5.0.0.4634.697f757-2
++conda-forge/win-64::mkl-2022.0.0-h0e2418a_796
++conda-forge/win-64::msys2-conda-epoch-20160418-1
++conda-forge/win-64::numpy-1.22.4-py39h0948cea_0
++conda-forge/win-64::openssl-1.1.1o-h8ffe710_0
++conda-forge/win-64::python_abi-3.9-2_cp39
++conda-forge/win-64::scikit-learn-1.1.1-py39he931e04_0
++conda-forge/win-64::scipy-1.8.1-py39hc0c34ad_0
++conda-forge/win-64::tbb-2021.5.0-h2d74725_1
+# update specs: ['scikit-learn']
