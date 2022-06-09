@@ -124,4 +124,4 @@ dependencies:
     - webencodings==0.5.1
     - widgetsnbextension==3.6.0
     - zipp==3.8.0
-prefix: C:\Users\HP\anaconda3_new\envs\deployenv
+prefix: https://github.com/JoyUgoyah/AI-Oil-and-Gas-Choke-Performance-Monitoring/tree/main/deployenv
