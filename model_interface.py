@@ -129,12 +129,12 @@ if uploaded_file is not None:
     if (b=='Abnormal occurrence' and b==a):
         image = Image.open('abnormal trend.png')
         
-        st.image(image, caption='Warning: Abnormal Occurence')
+        st.image(image, caption='Warning: Choke is Performing Abnormally!')
 
     else:
         image = Image.open('normal trend.png')
         
-        st.image(image, caption='Normal Trend')   
+        st.image(image, caption='Choke is Performing Normally.')   
 
 
     #Print predictions as table
