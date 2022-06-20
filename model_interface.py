@@ -4,6 +4,7 @@ import pandas as pd
 import altair as alt
 import numpy as np
 import time
+from PIL import Image
 
 
 
@@ -118,6 +119,23 @@ if uploaded_file is not None:
 
     # Output data frame
     output = pd.DataFrame({'Start date': well_data['Start date'], 'Prediction': y_pred})
+
+    
+
+    # Warning Image output
+    a = output['Prediction'].iloc[-2]
+    b = output['Prediction'].iloc[-1]
+
+    if (b=='Abnormal occurrence' and b==a):
+        image = Image.open('abnormal trend.png')
+        
+        st.image(image, caption='Warning: Abnormal Occurence')
+
+    else:
+        image = Image.open('normal trend.png')
+        
+        st.image(image, caption='Normal Trend')   
+
 
     #Print predictions as table
     st.table(output)
