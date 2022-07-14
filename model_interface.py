@@ -145,7 +145,8 @@ if uploaded_file is not None:
     st.markdown(' ')
 
     # Add line graph of result
+    start_date_list = output['Start date'}.tolist()
     c = alt.Chart(output, title='Monthly Choke Performance Monitoring').mark_line().encode(
-     x=alt.X('Start date', sort='Start date'), y='Condition').properties(width=800, height=300)
+     x=alt.X('Start date', sort=start_date_list), y='Condition').properties(width=800, height=300)
 
     st.altair_chart(c, use_container_width=True)
