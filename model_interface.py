@@ -122,21 +122,19 @@ if uploaded_file is not None:
 
     
 
-    """
     # Warning Image output
-    a = output['Prediction'].iloc[-2]
-    b = output['Prediction'].iloc[-1]
+    #a = output['Prediction'].iloc[-2]
+    #b = output['Prediction'].iloc[-1]
 
-    if (b=='Abnormal occurrence' and b==a):
-        image = Image.open('abnormal trend.png')
+    #if (b=='Abnormal occurrence' and b==a):
+    #    image = Image.open('abnormal trend.png')
         
-        st.image(image, caption='Warning: Choke is Performing Abnormally!')
+    #    st.image(image, caption='Warning: Choke is Performing Abnormally!')
 
-    else:
-        image = Image.open('normal trend.png')
+    #else:
+    #    image = Image.open('normal trend.png')
         
-        st.image(image, caption='Choke is Performing Normally.')
-    """ 
+    #    st.image(image, caption='Choke is Performing Normally.')
 
 
     #Print predictions as table
