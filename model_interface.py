@@ -118,23 +118,23 @@ if uploaded_file is not None:
     y_pred = predict_batch(model=model, batch_input_features=X) 
 
     # Output data frame
-    output = pd.DataFrame({'Start date': well_data['Start date'], 'Prediction': y_pred})
+    output = pd.DataFrame({'Start date': well_data['Start date'], 'Condition': y_pred})
 
     
 
     # Warning Image output
-    a = output['Prediction'].iloc[-2]
-    b = output['Prediction'].iloc[-1]
+    #a = output['Prediction'].iloc[-2]
+    #b = output['Prediction'].iloc[-1]
 
-    if (b=='Abnormal occurrence' and b==a):
-        image = Image.open('abnormal trend.png')
+    #if (b=='Abnormal occurrence' and b==a):
+    #    image = Image.open('abnormal trend.png')
         
-        st.image(image, caption='Warning: Abnormal Occurence')
+    #    st.image(image, caption='Warning: Choke is Performing Abnormally!')
 
-    else:
-        image = Image.open('normal trend.png')
+    #else:
+    #    image = Image.open('normal trend.png')
         
-        st.image(image, caption='Normal Trend')   
+    #    st.image(image, caption='Choke is Performing Normally.')
 
 
     #Print predictions as table
@@ -146,6 +146,6 @@ if uploaded_file is not None:
 
     # Add line graph of result
     c = alt.Chart(output, title='Monthly Choke Performance Monitoring').mark_line().encode(
-     x='Start date', y='Prediction').properties(width=800, height=300)
+     x='Start date', y='Condition').properties(width=800, height=300)
 
     st.altair_chart(c, use_container_width=True)
